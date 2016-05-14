@@ -1,0 +1,107 @@
+body {
+	background : url("img/img-fond.png") fixed repeat;
+}
+
+/* TYPOS */
+
+@font-face {
+	font-family: 'Quicksand-Bold';
+	src: url('font/Quicksand-Bold.otf');
+}
+
+* {
+	font-family : Arial, Verdana, sans-serif;
+}
+
+h1, h2 {
+	font-family: 'Quicksand-Bold', Impact, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+/* LISERET */
+
+#liseret {
+    width: 5%;
+    height: 800px;
+    background-color: teal;
+    float: left;
+}
+
+/* HEADER */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre
+{
+	margin: auto;
+}
+
+h1, p {
+	text-align: center;
+}
+
+#img-profil {
+	float : right;
+	border:2px black solid;
+	border-radius:15px;
+	box-shadow: 3px 3px 6px black;
+}
+
+/* SECTIONS */
+
+#contenu{
+	display:flex;
+	justify-content:space-around;
+}
+
+h2 {
+	color: teal; 
+}	
+
+#experiences, #competences, #formation
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#experiences
+{
+	clear: both;
+    width: 30%; 
+}
+
+#competences
+{
+    width: 30%;
+}
+
+#formation
+{
+	width: 30%;
+}
+
+/* MEDIAQUERIES */
+@media all and (max-width: 1024px)
+{
+
+#liseret {
+    display : none;
+  }
+
+#contenu{
+	flex-direction:column;
+}
+
+#experiences, #competences, #formation
+{
+	width: 100%;
+	display: block;
+    clear: both;
+    vertical-align: top;
+	margin : 0;
+}
+
+}

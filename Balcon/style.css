@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'ambleregular';
+    src: url('fonts/Amble-Regular-webfont.eot');
+    src: url('fonts/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amble-Regular-webfont.woff') format('woff'),
+         url('fonts/Amble-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*
+{
+	font-family: ambleregular, Impact, "Arial Black", Arial, Verdana, sans-serif;
+}
+}
+p, li
+{
+	font-size: .9em;
+}
+h1 + p
+{
+	font-style: italic;
+}
+h2
+{
+	font-weight: bold;
+	text-decoration: underline;
+}
+h1
+{
+	text-align: right;
+	width: 50%;
+	padding: 10px;
+}
+.flottant
+{
+	float: left;
+	margin-right: 50px;
+	margin-left: 20px;
+	margin-top: 10px
+}
+nav
+{
+	clear: left;
+}
+body
+{
+	/*background: url("photos/small_fraises.jpg") fixed no-repeat top right, url("photos/2016-05-07 16.36.45.jpg");*/
+	background-color: rgb(174,235,223);
+/*	background-image: url("photos/2016-05-07 16.36.45.jpg");*/
+
+}
+
+/*h1
+{
+	background-color: rgba(200,235,223,1);
+	border-radius: 30px;
+
+}*/
+
+h1
+{
+	border: 10px green solid;
+	border-radius: 0px 30px;
+	box-shadow: 10px 10px 50px green inset;
+}
+a
+{
+	color: green;
+	text-decoration: none;
+}
+a:hover
+{
+	/*font-weight: bold;*/
+	text-shadow: 1px 1px 1px black;
+}
+.flottant:hover
+{
+	border: 1px black solid;
+}
+a:active
+{
+	color: red;
+}
+a:visited
+{
+	color: gray;
+}

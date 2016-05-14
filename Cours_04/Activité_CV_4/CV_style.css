@@ -1,0 +1,181 @@
+/* Mise en forme du texte _____________________*/
+
+@font-face
+{
+    font-family: 'ambleregular';
+    src: url('fonts/Amble-Regular-webfont.eot');
+    src: url('fonts/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amble-Regular-webfont.woff') format('woff'),
+         url('fonts/Amble-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'caviar_dreamsregular';
+    src: url('fonts/CaviarDreams-webfont.eot');
+    src: url('fonts/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CaviarDreams-webfont.woff') format('woff'),
+         url('fonts/CaviarDreams-webfont.ttf') format('truetype'),
+         url('fonts/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*
+{
+	font-family: ambleregular, Impact, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+h1, h2
+{
+	font-family: caviar_dreamsregular, Impact, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+h1
+{
+	color: rgb(233, 83, 37);
+	font-size: 3em;
+	margin-top: 0px;
+}
+
+h2
+{
+	color: #2f2f2f;
+	background-color: rgba(233, 83, 37, .5);
+	font-size: 1.5em;
+	padding: 5px;	
+	margin: 0px;
+	width: 100%;
+}
+li
+{
+	font-size: 1em;
+}
+
+
+/* Mise en forme liens ____________________________*/
+a
+{
+	text-decoration: none;
+	color: rgb(233, 83, 37);
+}
+
+a:visited
+{
+	color: gray;
+}
+
+
+/* Backgroung image _____________________________*/
+body
+{
+	background-image: url("White-Texture-HD-Backgrounds-10.jpg");
+	background-size: cover;
+}
+
+
+/* Header _______________________________________*/
+#header_text
+{
+	text-align: right;
+}
+
+/* Photo */
+
+.flottant
+{
+	float: left;
+	border: 3px #2f2f2f solid;
+	border-radius: 30px;
+	box-shadow: 10px 10px 30px #2f2f2f;
+	margin: 0 15px 30px 0;
+}
+
+.suiteflottant
+{
+	clear: left;
+}
+
+/* Structure page___________________________________*/
+
+#lisere
+{
+	display: inline-block;
+	vertical-align: top;
+
+	height: 706px;
+	width: 8%;
+	background-color: rgb(233, 83, 37);
+	border-radius: 30px 0 0 30px;
+	margin-right: 10px;
+}
+
+#corpsCV
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 90%;
+}
+
+#conteneur
+{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+section
+{
+	width: 30%;
+	padding-right: 10px;
+	overflow: auto;
+	text-align: left;
+	background-color: #FCE8E1;
+}
+/* Responsive design */
+
+@media screen and (max-width: 1224px)
+{
+
+	#lisere
+	{
+		display: none;
+	}
+	#corpsCV
+	{
+		width: 100%;
+	}
+	#conteneur
+	{
+		flex-direction: column;
+	}
+	section
+	{
+		width: auto;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 500px)
+{
+ 	#header_text	
+	{
+		clear: left;
+	}
+	h1
+	{
+		font-size: 2em;
+	}
+	h2
+	{
+		font-size: 1em;
+	}
+	p, li
+	{
+		font-size: .8em;
+	}	
+}

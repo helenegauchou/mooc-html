@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>testable</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="tablecss.css">
+	</head>
+
+	<body>
+		<table>
+		<caption>Titre du tableau</caption>
+			<tr>
+				<th>A</th>
+				<th>B</th>
+			</tr>
+			<tr>				
+				<td>1</td>
+				<td colspan="2">2</td>
+			</tr>
+			<tr>
+				<td colspan="2">3</td>
+				<td>4</td>
+				<td>5</td>
+			</tr>
+		</table>
+
+		<form method="post" action="traitement.php">
+			<p>
+				<fieldset>
+				<legend>Le titre de l'encadré</legend>
+					<p>
+						<label for="pseudo">Votre pseudo</label>
+						<input type="text" name="pseudo" id="pseudo" maxlength="15" placeholder="votre pseudo" autofocus required="?" />	
+					</p>
+					<p>
+						<input type="passeword">LA</input>
+					</p>
+					<p>
+						<input type="email"></input>	
+					</p>
+					<p>
+						<input type="submit" value="envoyer"></input>
+					</p>
+				</fieldset>
+
+				<label for="pseudo">Votre pseudo</label>
+				<input type="text" name="pseudo" id="pseudo" maxlength="15" placeholder="votre pseudo" />
+				<input type="passeword">LA</input>
+				<input type="email"></input>
+				<input type="url"></input>
+				<input type="tel"></input>
+				<input type="number" min="5" max="100" step="5"></input>
+				<input type="range" min="5" max="100" step="5"></input>
+				<input type="date"></input>
+				<input type="search"></input>
+				<input type="checkbox" checked=""></input>
+			</p>
+			<p>
+				<input type="radio" name="test">A</input>
+				<input type="radio" name="test">B</input>
+			</p>
+			<p>
+				<label for="choix">Quel est votre choix ?</label>
+				<select name="choix" id="choix">
+					<option value="A">A</option>
+					<option value="B" selected="">B</option>
+				</select>
+			</p>
+				
+
+			</p>
+
+			<p>
+				<input type="color"></input>
+			</p>
+			<p>
+				<textarea rows="5" cols="100">Le texte</textarea>
+			</p>
+			
+
+		</form>
+	</body>
+</html>

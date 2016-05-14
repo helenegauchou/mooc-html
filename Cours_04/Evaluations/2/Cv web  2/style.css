@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Acme);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic);
+
+h1{
+	color: #f04d48;
+	font-family : Acme, OpenSans, arial;
+	font-size : 2.4em;
+	text-align : center;
+	
+}
+.imageflottante{
+	float : right;
+	border-width : 2px;
+	border-color : #6ec9c4;
+	border-style : outset;
+	box-shadow : 5px 5px 1px black;
+	
+}
+section {
+	display : inline-block;
+	vertical-align : top;
+	
+}
+.accroche{
+	text-align : center;
+	font-size : 1.2em;
+	font-style : strong;
+}
+h2{
+	color: #6ec9c4;
+font-family: Acme, OpenSans, arial;
+font-size: 2em;
+}
+p,ul {
+	color : #222528;
+	font-family : OpenSans, arial;
+	font-size : 0.8em;
+}
+	
+em{
+	color: #f04d48;
+	font-size: 1.1em;
+	font-style: italic;
+	font-family: OpenSans, arial;
+}
+strong{
+	color : #f04d48;
+}	
+#frise {
+	display : inline-block;
+	vertical-align : top;
+	width : 10%;
+	background-image : url('fond.jpg');
+	height : 500px;
+}
+
+
+#conteneur {
+	display: inline-block;
+	vertical-align : top;
+	width : 85%;
+}
+
+@media screen and (max-width: 1024px)
+{
+#frise {
+	display : none;
+}
+section {
+	flex-direction : column;
+	width : auto;
+	display : flex;
+}
+}

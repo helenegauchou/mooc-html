@@ -1,0 +1,130 @@
+
+body
+{
+background-color : white;
+}
+
+ #conteneur
+{
+    border: 2px solid #444;
+    border-radius:10px;
+    width:5%;
+    min-width:100px; 
+
+    
+}
+
+.element
+{
+	width :100px;
+	height :900px;
+	border-radius:7px;
+}
+
+.element:nth-child(1)
+{
+   background-color: green;
+}
+p
+{
+    border-radius: 10px;
+}
+
+
+.photo
+{
+
+float : right ;
+}
+#ligne
+{
+	
+width :40%;
+   
+}
+
+#ma
+{
+width :60%;
+}
+
+#ligne1
+{
+ width: 70%; 
+    
+}
+
+ #ma1
+ {
+    width :60%;
+
+ }
+
+ #ligne2
+ {
+  width: 40%; 
+  
+   
+ }
+ #ma2
+ {
+    width :60%;
+ }
+
+#cent
+{
+
+flex-direction: column;
+text-align : center ;
+
+}
+P
+{
+font-size :  23px ;
+}
+h2
+{
+color : red ;
+
+}
+
+
+@font-face { /* Définition d'une nouvelle police nommée LearningCurveProRegular */
+    font-family: 'LearningCurveProRegular';
+    src: url('LearningCurve_OT-webfont.eot');
+    src: url('LearningCurve_OT-webfont.eot?#iefix') format('embedded-opentype'),
+         url('LearningCurve_OT-webfont.woff') format('woff'),
+         url('LearningCurve_OT-webfont.ttf') format('truetype'),
+         url('LearningCurve_OT-webfont.svg#LearningCurveProRegular') format('svg');
+}
+
+h1 /* Utilisation de la police qu'on vient de définir sur les titres */
+{
+    font-family: 'LearningCurveProRegular', Arial, serif;
+}
+
+section
+{
+    display: flex;
+    
+    padding-top: 10px;
+}
+
+article 
+{
+   display: flex;
+    
+    padding-top: 10px; 
+}
+
+article, aside
+{
+    text-align: left;
+}
+
+aside
+{
+
+}
+
+

@@ -1,0 +1,135 @@
+@font-face { /* Nouvelle police */
+    font-family: 'droid_sansregular';
+    src: url('DroidSans-webfont.eot');
+    src: url('DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('DroidSans-webfont.woff') format('woff'),
+         url('DroidSans-webfont.ttf') format('truetype'),
+         url('DroidSans-webfont.svg#droid_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body
+{
+    font-family: 'droid_sansregular', 'Arial', serif;
+    text-align: justify;
+    font-size: 14px;
+    border-left: 200px solid blue;
+}
+
+@media screen and (max-width: 1024px)
+{
+   body
+        {
+        border-left: 0px white;
+        }
+
+}
+
+#conteneur
+{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: space-around;
+}
+
+@media screen and (max-width: 1024px)
+{
+   #conteneur
+        {
+        flex-direction: column; 
+        }
+}
+
+
+#posteactuel
+{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;  
+    text-align: center;
+}
+
+#experience
+{
+    width: 30%;
+}
+
+@media screen and (max-width: 1024px)
+{
+   #experience
+        {
+        width: auto;
+        }
+}
+
+#formation
+{
+    width: 30%;
+}
+
+@media screen and (max-width: 1024px)
+{
+   #formation
+        {
+        width: auto;
+        }
+}
+
+#competence
+{
+    width: 30%;
+}
+
+@media screen and (max-width: 1024px)
+{
+   #competence
+        {
+        width: auto;
+        }
+}
+
+h1 /* Nom et prénom */
+{
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+h2 /* Expérience, formation, compétence*/
+{
+	color: #4e4949;
+	font-size: 18px;
+	font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    /* bordure et ombre*/
+    border: 2px solid black;
+}
+
+strong /* chef de projet, ieseg*/
+{
+	font-size: 16px;
+	font-weight: bold;
+    font-style: normal;
+}
+
+em /* nom entreprise*/
+{
+	font-style: italic;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+img
+{
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+    float : right ;
+}
